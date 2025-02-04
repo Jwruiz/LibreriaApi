@@ -23,4 +23,8 @@ Autor
 
 Jeheremi Ruiz - Desarrollador Java
 
-![estructura_ del_proyecto](mvn/assets/estructuraProyectoLibreria.png)
+### * Puedes ver el proyecto en el siguiente video:  https://youtu.be/ZnWczk3oXqo
+
+![estructura_ del_proyecto](/.mvn/assets/estructuraProyectoLibreria.png)
+
+
