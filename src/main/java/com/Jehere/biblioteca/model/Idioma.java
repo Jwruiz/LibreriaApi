@@ -1,26 +1,22 @@
 package com.Jehere.biblioteca.model;
 
 public enum Idioma {
+    ES,  // Español
+    EN,  // Inglés
+    FR;  // Francés
 
-
-        ESPANOL("es"),
-        INGLES("en"),
-        FRANCES("fr");
-
-        private String idiomaLibro;
-        Idioma (String idiomaLibro){
-            this.idiomaLibro = idiomaLibro;
+    // Método para convertir un string a un valor del enum
+    public static Idioma fromString(String str) {
+        switch (str.toLowerCase()) {
+            case "es":
+                return ES;
+            case "en":
+                return EN;
+            case "fr":
+                return FR;
+            default:
+                throw new IllegalArgumentException("Idioma no válido");
         }
-
-        public static Idioma fromString(String text) {
-            for (Idioma idioma : Idioma.values()) {
-                if (idioma.idiomaLibro.equalsIgnoreCase(text)) {
-                    return idioma;
-                }
-            }
-            throw new IllegalArgumentException("Ningun idioma encontrado: " + text);
-        }
-
     }
-
+}
 
